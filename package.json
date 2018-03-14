@@ -1,0 +1,25 @@
+{
+  "name": "bookstore-restful-api",
+  "version": "1.0.0",
+  "description": "Simple Bookstore App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanovishnu/Bookstore-RESTFUL-API.git"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "mongoose": "*",
+    "nodemon": "^1.17.2"
+  },
+  "author": "Mano Vishnu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanovishnu/Bookstore-RESTFUL-API/issues"
+  },
+  "homepage": "https://github.com/amanovishnu/Bookstore-RESTFUL-API#readme"
+}
