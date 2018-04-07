@@ -1,0 +1,26 @@
+{
+  "name": "e-path",
+  "version": "1.0.0",
+  "description": "Simple Bookstore Webapp where users can view books based on authorname, bookname,genre etc ...",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanovishnu/Bookstore-RESTFUL-API.git"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "monogoose",
+    "body-parser",
+    "angular-js"
+  ],
+  "author": "Mano Vishnu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amanovishnu/Bookstore-RESTFUL-API/issues"
+  },
+  "homepage": "https://github.com/amanovishnu/Bookstore-RESTFUL-API#readme"
+}
