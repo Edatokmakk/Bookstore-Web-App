@@ -1,0 +1,24 @@
+{
+  "name": "bookstore-restful-api",
+  "version": "1.0.0",
+  "description": "MEAN Stack Bookstore Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanovishnu/Bookstore-RESTFUL-API.git"
+  },
+  "keywords": [
+    "MEAN",
+    "Stack",
+    "Node.js"
+  ],
+  "author": "Mano Vishnu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amanovishnu/Bookstore-RESTFUL-API/issues"
+  },
+  "homepage": "https://github.com/amanovishnu/Bookstore-RESTFUL-API#readme"
+}
