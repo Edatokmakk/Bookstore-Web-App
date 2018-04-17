@@ -1,7 +1,7 @@
 {
-  "name": "bookstore-restful-api",
+  "name": "cranberry",
   "version": "1.0.0",
-  "description": "MEAN Stack Bookstore Application",
+  "description": "Mean Stack Application ",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,11 +11,12 @@
     "url": "git+https://github.com/amanovishnu/Bookstore-RESTFUL-API.git"
   },
   "keywords": [
-    "MEAN",
-    "Stack",
-    "Node.js"
+    "node.js",
+    "mongoDB",
+    "Express.js",
+    "AngularJS"
   ],
-  "author": "Mano Vishnu",
+  "author": "Manovishnu",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/amanovishnu/Bookstore-RESTFUL-API/issues"
