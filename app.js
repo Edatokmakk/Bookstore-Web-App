@@ -3,14 +3,119 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var app = express();
 
+app.use(bodyParser.json());
+
+Genre = require('./models/genre.js');
+Book = require('./models/book.js');
+
 // Connection to Database
 mongoose.connect('mongodb://localhost/bookstore');
 var db = mongoose.connection;
 
-//Routing Functions
+//Route Index file
 app.get('/',function(req,res){
   res.send('Please use /api/books or /api/genres');
 });
+
+//Route for Genres
+app.get('/api/genres',function(req,res){
+  Genre.getGenres(function(err,genres){
+    if(err){
+      throw err;
+    }
+    res.json(genres);
+  });
+});
+
+//Route for Create Genres
+app.post('/api/genres',function(req,res){
+  var genre = req.body;
+  Genre.addGenre(genre,function(err,genre){
+    if(err){
+      throw err;
+    }
+    res.json(genre);
+  });
+});
+
+//Route for Create Genres
+app.put('/api/genres/:_id',function(req,res){
+  var id = req.params._id;
+  var genre = req.body;
+  Genre.updateGenre(id,genre,function(err,genre){
+    if(err){
+      throw err;
+    }
+    res.json(genre);
+  });
+});
+
+//Route for Removing genres
+app.delete('/api/genres/:_id',function(req,res){
+  var id = req.params._id;
+  Genre.removeGenre(id,function(err,genre){
+    if(err){
+      throw err;
+    }
+    res.json(genre);
+  });
+});
+
+//Route for Books
+app.get('/api/books',function(req,res){
+  Book.getBooks(function(err,books){
+    if(err){
+      throw err;
+    }
+    res.json(books);
+  });
+});
+
+//Route for BookById
+app.get('/api/books/:_id',function(req,res){
+  Book.getBookById(req.params._id,function(err,book){
+    if(err){
+      throw err;
+    }
+    res.json(book);
+  });
+});
+
+//Route for Create Book
+app.post('/api/books',function(req,res){
+  var book = req.body;
+  Book.addBook(book,function(err,book){
+    if(err){
+      throw err;
+    }
+    res.json(book);
+  });
+});
+
+//Route for Update books
+app.put('/api/books/:_id',function(req,res){
+  var id = req.params._id;
+  var book = req.body;
+  Book.updateBook(id,book,function(err,book){
+    if(err){
+      throw err;
+    }
+    res.json(book);
+  });
+});
+
+//Route for Removing books
+app.delete('/api/books/:_id',function(req,res){
+  var id = req.params._id;
+  Book.removeBook(id,function(err,book){
+    if(err){
+      throw err;
+    }
+    res.json(book);
+  });
+});
+
+//Server Listen Port
 app.listen(3000,function(){
   console.log('Server Running on Port 3000....');
 });
