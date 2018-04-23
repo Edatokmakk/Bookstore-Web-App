@@ -1,0 +1,13 @@
+img{width:100%;}
+body{
+background-color: white;
+}
+.list-group{
+  margin-top: 20px;
+}
+.well {
+  padding: 10px;
+}
+.navbar{
+  color: black !important;
+}
