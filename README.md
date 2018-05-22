@@ -4,5 +4,7 @@
 # Sample Images
 ![Homepage](Snapshots/bookstore.png)
 ![Homepage](Snapshots/bookstore2.png)
+<p align="center"><b>Homepage of Bookstore Web App</b></p>
+
 ![Book Details](Snapshots/bookdetails.png)
 ![addbook](Snapshots/addbook.png)
