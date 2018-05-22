@@ -12,5 +12,5 @@
 ![addbook](Snapshots/addbook.png)
 <p align="center"><b>Add Book Details Page</b></p>
 
-<p align="center">© Created by Manovishnu</b></p>
+<p align="center"><b>© Created by Manovishnu</b></p>
 
