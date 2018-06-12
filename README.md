@@ -3,7 +3,6 @@
 * BookStore is a MEAN Stack Application With CURD Functions
 # Sample Images
 ![Homepage](Snapshots/bookstore.png)
-![Homepage](Snapshots/bookstore2.png)
 <p align="center"><b>Homepage of Bookstore Web App</b></p>
 
 ![Book Details](Snapshots/bookdetails.png)
